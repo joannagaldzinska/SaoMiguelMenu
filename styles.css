@@ -1,3 +1,10 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .title-text {
   display: flex;
   text-align: center;
@@ -18,4 +25,13 @@
 
 .price {
   margin-left: 20px;
+}
+
+.bar-title {
+  font-family: "monoton", cursive;
+  font-size: 70px;
+}
+
+.bar-name {
+  font-family: "sacramento", cursive;
 }

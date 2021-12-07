@@ -1,0 +1,21 @@
+.title-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cocktails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  margin-left: 20px;
+}

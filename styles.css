@@ -51,6 +51,12 @@ body {
   padding: 0;
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .product {
   display: flex;
   justify-content: space-between;
@@ -64,4 +70,15 @@ body {
 
 .price {
   margin-left: 20px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: black;
+  border-radius: 50%;
 }

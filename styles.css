@@ -28,6 +28,7 @@ body {
   font-size: 52px;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
 }
 
 .bar-name {
@@ -105,16 +106,34 @@ footer {
   margin-bottom: 8px;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .icon {
   display: block;
   block-size: 40px;
+  margin: 5px;
+  margin-top: 0;
 }
 
 .sm-icons {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.bar-title-footer {
+  font-family: "monoton", cursive;
+  font-size: 36px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
 }
 
 /* .box {
@@ -130,7 +149,7 @@ footer {
 .button {
   /* background-image: url("images/info.png"); */
   /* padding: 2px; */
-  background-color: greenyellow;
+  background-color: rgb(25, 126, 41);
   border: 1px solid black;
   border-radius: 50%;
   text-decoration: none;

@@ -7,7 +7,9 @@
     <title>SaoMiguel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Sacramento&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300;400;500;600&family=Roboto:wght@100&family=Sacramento&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -35,8 +37,8 @@
                 <li class="product"><span>Lvivske 1715</span><span>30/50</span></li>
                 <li class="product"><span>Kronenbourg Blanc</span><span>50/65</span></li>
                 <li class="product"><span>Guinness</span><span>90/120</span></li>
-                <li class="product"><span>Cider Val de Rance</span><span>70</span></li>
-                <li class="product"><span>Alco free</span><span>70</span></li>
+                <li class="product"><span>Cider Val de Rance 0.33l</span><span>70</span></li>
+                <li class="product"><span>Alco free 0.33l</span><span>70</span></li>
             </ul>
         </section>
 
@@ -123,17 +125,49 @@
             </div>
         
             <ul>
-                <li class="product"><span>Empanada</span><span class="price">80</span></li>
-                <li class="product"><span>Coxinha</span><span class="price">100</span></li>
+                <li class="product">
+                    <span>Empanada
+                        <div class="box">
+                            <a class="button" href="#empanada">more</a>
+                        </div>
+                    </span>
+                    <span class="price">80</span></li>
+                <li class="product"><span>Coxinha
+                        <div class="box">
+                            <a class="button" href="#coxinha">more</a>
+                        </div>
+                    </span>
+                    <span class="price">100</span></li>
                 <li class="product"><span>Bolinhos de Aroz</span><span class="price">60</span></li>
                 <li class="product"><span>Polenta Volcano</span><span class="price">80</span></li>
                 <li class="product"><span>Chili con Carne</span><span class="price">130</span></li>
             </ul>
         </section>
 
-    </main>
+        <div id="empanada" class="overlay">
+            <div class="popup">
+                <h2>Empanada</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Argentinian speciality. Oven baked with different filling (Chicken, Pork, Beef,Vegetarian, Vegan)
+                </div>
+            </div>
+        </div>
 
+        <div id="coxinha" class="overlay">
+            <div class="popup">
+                <h2>Coxinha</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Typical snack from Brazil. Spiced chicken wrapped in secret dough and deep fried.
+                </div>
+            </div>
+        </div>
+
+    </main>
+<hr>
     <footer>
+        
         <div class="footer-container">
             <h1 class="bar-title">BAR</h1>
             <h2 class="bar-name">Sao Miguel</h2>
@@ -158,6 +192,7 @@
         </div>
 
     </footer>
-    
+
+   
 </body>
 </html>

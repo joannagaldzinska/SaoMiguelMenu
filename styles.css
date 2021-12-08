@@ -16,7 +16,8 @@ ul {
 body {
   color: black;
   background-color: white;
-  font-family: Roboto, sans-serif;
+  font-family: quicksand;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -40,10 +41,6 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-}
-
-.section-title {
-  background-color: rgb(84, 122, 119);
 }
 
 .title-text {
@@ -87,10 +84,10 @@ body {
   border-radius: 50%;
 }
 footer {
-  background-color: rgb(84, 122, 119);
+  /* background-color: rgb(84, 122, 119); */
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -100,7 +97,7 @@ footer {
 
 .map {
   display: block;
-  color: #ffffff;
+  color: black;
   font-size: 12px;
   line-height: 1.4;
   font-style: normal;
@@ -118,4 +115,84 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+/* .box {
+  width: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+} */
+
+.button {
+  padding: 2px;
+  background-color: greenyellow;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06d85f;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
 }

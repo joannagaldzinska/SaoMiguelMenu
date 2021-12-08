@@ -128,10 +128,11 @@ footer {
 } */
 
 .button {
-  padding: 2px;
+  /* background-image: url("images/info.png"); */
+  /* padding: 2px; */
   background-color: greenyellow;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;

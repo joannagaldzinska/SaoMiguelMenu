@@ -16,11 +16,20 @@ ul {
 body {
   color: black;
   background-color: ivory;
-  font-family: quicksand;
+  font-family: "quicksand", "Montserrat+alternates";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
 }
 
 .bar-title {
